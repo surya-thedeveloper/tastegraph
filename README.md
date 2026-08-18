@@ -225,7 +225,17 @@ Open [http://localhost:5173](http://localhost:5173)
 
 ## Screenshots
 
-*(Add after deployment)*
+### 1. Explore / Home Page
+![Explore Home Page](screenshots/home_page.png)
+
+### 2. Ingredient Details (with Compounds and Network Visualization)
+![Ingredient details](screenshots/ingredient_details.png)
+
+### 3. Flavor Bridge (Finding the Shortest Molecular Path)
+![Flavor bridge shortest path](screenshots/flavor_bridge.png)
+
+### 4. Surprise Me (Unexpected Pairing Generator)
+![Surprise pairing](screenshots/surprise_pairing.png)
 
 ---
 
