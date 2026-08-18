@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pyrazines",
+    "name": "Pyrazines",
+    "chemical_class": "Nitrogen heterocycle",
+    "aroma_descriptor": "Roasted, nutty, earthy"
+  },
+  {
+    "id": "furanones",
+    "name": "Furanones",
+    "chemical_class": "Oxygen heterocycle",
+    "aroma_descriptor": "Caramel, sweet, bready"
+  },
+  {
+    "id": "vanillin",
+    "name": "Vanillin",
+    "chemical_class": "Phenolic aldehyde",
+    "aroma_descriptor": "Vanilla, creamy, sweet"
+  },
+  {
+    "id": "eugenol",
+    "name": "Eugenol",
+    "chemical_class": "Phenylpropanoid",
+    "aroma_descriptor": "Clove, spicy, woody"
+  },
+  {
+    "id": "linalool",
+    "name": "Linalool",
+    "chemical_class": "Monoterpene alcohol",
+    "aroma_descriptor": "Floral, citrus, lavender"
+  },
+  {
+    "id": "limonene",
+    "name": "Limonene",
+    "chemical_class": "Monoterpene",
+    "aroma_descriptor": "Citrus, bright, clean"
+  },
+  {
+    "id": "glutamates",
+    "name": "Glutamates",
+    "chemical_class": "Amino acid derivative",
+    "aroma_descriptor": "Savory, umami, mouth-coating"
+  },
+  {
+    "id": "diacetyl-lactones",
+    "name": "Diacetyl & Lactones",
+    "chemical_class": "Diketone / Cyclic ester",
+    "aroma_descriptor": "Buttery, creamy, coconut"
+  },
+  {
+    "id": "guaiacol",
+    "name": "Guaiacol",
+    "chemical_class": "Phenol",
+    "aroma_descriptor": "Smoky, woody, medicinal"
+  },
+  {
+    "id": "1-octen-3-ol",
+    "name": "1-Octen-3-ol",
+    "chemical_class": "Unsaturated alcohol",
+    "aroma_descriptor": "Mushroom, earthy, forest floor"
+  },
+  {
+    "id": "isoamyl-acetate",
+    "name": "Isoamyl Acetate",
+    "chemical_class": "Ester",
+    "aroma_descriptor": "Banana, fruity, candy-like"
+  },
+  {
+    "id": "ethyl-butanoate",
+    "name": "Ethyl Butanoate",
+    "chemical_class": "Ester",
+    "aroma_descriptor": "Tropical, fruity, pineapple"
+  },
+  {
+    "id": "cinnamaldehyde",
+    "name": "Cinnamaldehyde",
+    "chemical_class": "Phenylpropanoid aldehyde",
+    "aroma_descriptor": "Warm, cinnamon, slightly sweet"
+  },
+  {
+    "id": "geraniol",
+    "name": "Geraniol",
+    "chemical_class": "Monoterpenoid",
+    "aroma_descriptor": "Rose, floral, slightly citrus"
+  },
+  {
+    "id": "furaneol",
+    "name": "Furaneol",
+    "chemical_class": "Furanone",
+    "aroma_descriptor": "Strawberry, candy, sweet"
+  }
+]

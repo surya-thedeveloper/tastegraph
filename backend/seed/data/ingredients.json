@@ -1,0 +1,242 @@
+[
+  {
+    "id": "dark-chocolate",
+    "name": "Dark Chocolate",
+    "description": "Fermented and roasted cacao. One of the most chemically complex ingredients you'll find in any kitchen — over 600 volatile compounds.",
+    "origin": "Central America",
+    "emoji": "🍫",
+    "category": "Roasted"
+  },
+  {
+    "id": "coffee",
+    "name": "Coffee",
+    "description": "Roasted seeds of the Coffea plant. The roasting process creates hundreds of aromatic compounds, many of which it shares with chocolate.",
+    "origin": "Ethiopia",
+    "emoji": "☕",
+    "category": "Roasted"
+  },
+  {
+    "id": "vanilla",
+    "name": "Vanilla",
+    "description": "The cured seed pod of a tropical orchid. Vanillin is its signature compound, but the real complexity comes from dozens of supporting molecules.",
+    "origin": "Mexico",
+    "emoji": "🌼",
+    "category": "Sweet"
+  },
+  {
+    "id": "caramel",
+    "name": "Caramel",
+    "description": "Browned sugar — the Maillard reaction and caramelization in one. Produces furans, lactones, and diacetyl in abundance.",
+    "origin": "France",
+    "emoji": "🍮",
+    "category": "Sweet"
+  },
+  {
+    "id": "miso",
+    "name": "Miso",
+    "description": "Fermented soybean paste from Japan. The long fermentation creates both savory glutamates and roasted pyrazines — a remarkable depth.",
+    "origin": "Japan",
+    "emoji": "🫙",
+    "category": "Umami"
+  },
+  {
+    "id": "parmesan",
+    "name": "Parmesan",
+    "description": "Aged Italian hard cheese. The two-year aging process concentrates glutamates to near-umami-bomb levels, plus a buttery lactone richness.",
+    "origin": "Italy",
+    "emoji": "🧀",
+    "category": "Umami"
+  },
+  {
+    "id": "truffle",
+    "name": "Black Truffle",
+    "description": "The most expensive mushroom in the world. Its distinctive aroma comes from dimethyl sulfide and androstenol — unique in the food world.",
+    "origin": "France",
+    "emoji": "🌑",
+    "category": "Earthy"
+  },
+  {
+    "id": "mushroom",
+    "name": "Shiitake Mushroom",
+    "description": "Dried shiitake is essentially an umami bomb. The drying process concentrates both glutamates and the distinctive mushroom aroma compound 1-octen-3-ol.",
+    "origin": "Japan",
+    "emoji": "🍄",
+    "category": "Earthy"
+  },
+  {
+    "id": "cardamom",
+    "name": "Cardamom",
+    "description": "The 'queen of spices.' A warm, eucalyptus-meets-citrus aroma that works equally well in sweet and savory dishes.",
+    "origin": "India",
+    "emoji": "🫛",
+    "category": "Spice"
+  },
+  {
+    "id": "lemon",
+    "name": "Lemon",
+    "description": "Limonene is the star, but lemon's complexity comes from a mix of terpenes, aldehydes, and esters that shift when the zest is heated.",
+    "origin": "Southeast Asia",
+    "emoji": "🍋",
+    "category": "Citrus"
+  },
+  {
+    "id": "lavender",
+    "name": "Lavender",
+    "description": "Linalool and linalyl acetate define the lavender aroma. It shares these compounds with bergamot, cardamom, and surprisingly — coriander.",
+    "origin": "Mediterranean",
+    "emoji": "💜",
+    "category": "Floral"
+  },
+  {
+    "id": "rose",
+    "name": "Rose",
+    "description": "Geraniol and citronellol give rose its distinctive scent. A small amount in a dish reads as 'mysterious' rather than 'perfume'.",
+    "origin": "Persia",
+    "emoji": "🌹",
+    "category": "Floral"
+  },
+  {
+    "id": "butter",
+    "name": "Butter",
+    "description": "Diacetyl is what makes butter smell buttery. Lactones add a warm, creamy roundness. Fat also carries and amplifies other flavors nearby.",
+    "origin": "Northern Europe",
+    "emoji": "🧈",
+    "category": "Dairy"
+  },
+  {
+    "id": "cream",
+    "name": "Heavy Cream",
+    "description": "Similar compound profile to butter, but milder. Lactones make it smell faintly of coconut and vanilla — useful bridge ingredient.",
+    "origin": "Northern Europe",
+    "emoji": "🥛",
+    "category": "Dairy"
+  },
+  {
+    "id": "strawberry",
+    "name": "Strawberry",
+    "description": "Furaneol is responsible for the candy-sweet top note. Underneath are esters and a touch of linalool that keep it from being one-dimensional.",
+    "origin": "Europe",
+    "emoji": "🍓",
+    "category": "Fruity"
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "description": "Isoamyl acetate is the banana ester — it's also what gives banana-flavored candy its artificial quality. Natural bananas have eugenol too, which bridges to spices.",
+    "origin": "Southeast Asia",
+    "emoji": "🍌",
+    "category": "Fruity"
+  },
+  {
+    "id": "pineapple",
+    "name": "Pineapple",
+    "description": "Fruity esters (ethyl butanoate, methyl butanoate) plus furaneol. That's why pineapple works in fermented and caramelized contexts.",
+    "origin": "South America",
+    "emoji": "🍍",
+    "category": "Fruity"
+  },
+  {
+    "id": "rum",
+    "name": "Dark Rum",
+    "description": "Distilled fermented sugarcane with barrel aging. Esters from fermentation plus vanillin from the oak — a natural bridge between fruity and caramel.",
+    "origin": "Caribbean",
+    "emoji": "🍶",
+    "category": "Sweet"
+  },
+  {
+    "id": "cinnamon",
+    "name": "Cinnamon",
+    "description": "Cinnamaldehyde is the main compound — warm, sweet, slightly peppery. Eugenol connects it to clove and vanilla. Works across almost every category.",
+    "origin": "Sri Lanka",
+    "emoji": "🌿",
+    "category": "Spice"
+  },
+  {
+    "id": "clove",
+    "name": "Clove",
+    "description": "The most eugenol-dense spice. That's also the compound in vanilla, cinnamon, and basil — clove just has it at overwhelming concentration.",
+    "origin": "Indonesia",
+    "emoji": "🔴",
+    "category": "Spice"
+  },
+  {
+    "id": "soy-sauce",
+    "name": "Soy Sauce",
+    "description": "Fermented for 6–18 months. Like miso, it develops both glutamates (savory) and pyrazines (roasted) — but in liquid form.",
+    "origin": "China",
+    "emoji": "🫗",
+    "category": "Umami"
+  },
+  {
+    "id": "anchovy",
+    "name": "Anchovy",
+    "description": "Salted and fermented. The result is a concentrated umami hit from glutamates. Dissolves into sauces invisibly but makes everything taste more like itself.",
+    "origin": "Mediterranean",
+    "emoji": "🐟",
+    "category": "Umami"
+  },
+  {
+    "id": "honey",
+    "name": "Honey",
+    "description": "Floral volatiles from the bees' plant sources persist in the honey. Furaneol, linalool, and geraniol — it bridges floral, fruity, and sweet categories at once.",
+    "origin": "Global",
+    "emoji": "🍯",
+    "category": "Sweet"
+  },
+  {
+    "id": "smoked-paprika",
+    "name": "Smoked Paprika",
+    "description": "Dried and smoked red peppers. The smoking adds guaiacol and phenol (also in whisky and lapsang) — a bridge between the spice rack and the smokehouse.",
+    "origin": "Spain",
+    "emoji": "🌶️",
+    "category": "Smoky"
+  },
+  {
+    "id": "mezcal",
+    "name": "Mezcal",
+    "description": "Unlike tequila, mezcal is cooked in underground pits — which gives it guaiacol and phenolic smoke compounds alongside fruity fermentation esters.",
+    "origin": "Mexico",
+    "emoji": "🥃",
+    "category": "Smoky"
+  },
+  {
+    "id": "beetroot",
+    "name": "Beetroot",
+    "description": "Geosmin gives it that distinctive earthy, just-rained smell. Glutamates add savory depth. Roasting transforms it completely — the geosmin softens and sweetness emerges.",
+    "origin": "Mediterranean",
+    "emoji": "🫀",
+    "category": "Earthy"
+  },
+  {
+    "id": "lapsang-souchong",
+    "name": "Lapsang Souchong",
+    "description": "Tea smoked over pine wood. Guaiacol dominates — it's essentially liquid smoke in a teacup. Shares smoke compounds with paprika and mezcal.",
+    "origin": "China",
+    "emoji": "🍵",
+    "category": "Smoky"
+  },
+  {
+    "id": "yuzu",
+    "name": "Yuzu",
+    "description": "Japanese citrus with an aroma unlike anything else — limonene (lemon), nootkatone (grapefruit bitterness), and floral terpenes all at once.",
+    "origin": "Japan",
+    "emoji": "🟡",
+    "category": "Citrus"
+  },
+  {
+    "id": "lime",
+    "name": "Lime",
+    "description": "Sharper than lemon, with more citral and less sweetness. The zest contains volatile compounds that disappear with heat — always add last.",
+    "origin": "Southeast Asia",
+    "emoji": "🍈",
+    "category": "Citrus"
+  },
+  {
+    "id": "jasmine",
+    "name": "Jasmine",
+    "description": "Linalool and benzyl acetate define it. Indole — the same compound in jasmine, orange blossom, and certain cheeses — gives it a slightly animal edge that reads as complexity.",
+    "origin": "South Asia",
+    "emoji": "🌸",
+    "category": "Floral"
+  }
+]

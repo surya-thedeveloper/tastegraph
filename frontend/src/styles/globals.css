@@ -1,0 +1,181 @@
+/* =========================================================
+   TasteGraph — Global Styles
+   Design: Dark food-magazine aesthetic
+   Palette: warm browns, amber accent, cream text
+   ========================================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:           #1c1410;
+  --surface:      #2d2218;
+  --card:         #382a1c;
+  --border:       #4a3828;
+  --accent:       #d4a843;
+  --accent-dark:  #a87d28;
+  --accent-hot:   #c8622a;
+  --text:         #f0e6d3;
+  --text-muted:   #8a7a65;
+  --text-dim:     #5a4e3a;
+  --green:        #4a8c4a;
+  --radius:       10px;
+  --radius-lg:    16px;
+  --shadow:       0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.3);
+  --transition:   0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+button {
+  font-family: 'Inter', system-ui, sans-serif;
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Scrollbar styling — small touch that makes it feel polished */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dark);
+}
+
+/* Layout utilities */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.page {
+  min-height: calc(100vh - 72px);
+  padding: 48px 0 80px;
+}
+
+/* Grid for ingredient/pairing cards */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+/* Tag/badge */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-accent {
+  background: rgba(212, 168, 67, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(212, 168, 67, 0.3);
+}
+
+.badge-hot {
+  background: rgba(200, 98, 42, 0.15);
+  color: var(--accent-hot);
+  border: 1px solid rgba(200, 98, 42, 0.3);
+}
+
+.badge-green {
+  background: rgba(74, 140, 74, 0.15);
+  color: var(--green);
+  border: 1px solid rgba(74, 140, 74, 0.3);
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+/* Section header */
+.section-header {
+  margin-bottom: 28px;
+}
+
+.section-header h2 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.section-header p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Shared fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease forwards;
+}
+
+/* Shared pulse animation for loading skeletons */
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.7; }
+}

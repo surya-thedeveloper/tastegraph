@@ -1,0 +1,122 @@
+[
+  {
+    "id": "miso-chocolate-cookies",
+    "title": "Miso Chocolate Chip Cookies",
+    "description": "Brown butter, white miso, and dark chocolate. The miso adds a roasted, savory depth that makes you wonder why every cookie recipe doesn't do this.",
+    "difficulty": "easy",
+    "why_it_works": "Both miso and dark chocolate are rich in pyrazines from the fermentation and roasting process. The savory-sweet contrast is surprisingly addictive.",
+    "ingredients": ["dark-chocolate", "miso", "butter"]
+  },
+  {
+    "id": "cardamom-rose-latte",
+    "title": "Cardamom Rose Latte",
+    "description": "Warm milk with ground cardamom, a drop of rose water, and a touch of honey. Middle Eastern-inspired, fragrant enough to stop conversation.",
+    "difficulty": "easy",
+    "why_it_works": "Cardamom and rose both contain linalool and geraniol — they don't just pair well, they reinforce each other at the molecular level.",
+    "ingredients": ["cardamom", "rose", "honey"]
+  },
+  {
+    "id": "truffle-parmesan-pasta",
+    "title": "Truffle Parmesan Pasta",
+    "description": "Fresh pasta with truffle oil, freshly grated parmesan, and cracked black pepper. Four ingredients, absurd results.",
+    "difficulty": "easy",
+    "why_it_works": "Truffle and parmesan share glutamates — both are umami-dense. Together they create what chefs call 'umami stacking': each amplifies the other.",
+    "ingredients": ["truffle", "parmesan"]
+  },
+  {
+    "id": "lemon-lavender-shortbread",
+    "title": "Lemon Lavender Shortbread",
+    "description": "Buttery shortbread with lemon zest and dried lavender. Goes well with Earl Grey. Goes better on its own.",
+    "difficulty": "easy",
+    "why_it_works": "Lemon and lavender both contain linalool — a floral-citrus monoterpene that creates a seamless bridge between the two flavors. Butter's fat carries them both.",
+    "ingredients": ["lemon", "lavender", "butter"]
+  },
+  {
+    "id": "smoked-paprika-honey-wings",
+    "title": "Smoked Paprika Honey Glaze",
+    "description": "A glaze for chicken wings or roasted vegetables. The smokiness and sweetness seem opposed but they hold each other in check.",
+    "difficulty": "easy",
+    "why_it_works": "Guaiacol from the smoked paprika and the floral furaneol from honey shouldn't work together in theory. In practice, the fat from the meat mediates the compounds and it clicks.",
+    "ingredients": ["smoked-paprika", "honey"]
+  },
+  {
+    "id": "vanilla-coffee-panna-cotta",
+    "title": "Vanilla Coffee Panna Cotta",
+    "description": "Set cream flavored with espresso and vanilla bean. Served cold. Barely sweet — lets the bitterness of the coffee do the work.",
+    "difficulty": "medium",
+    "why_it_works": "Coffee and vanilla share furanones from the roasting/curing process. Cream's lactones round the whole thing out into something velvety.",
+    "ingredients": ["vanilla", "coffee", "cream"]
+  },
+  {
+    "id": "clove-rum-cake",
+    "title": "Dark Rum and Clove Spice Cake",
+    "description": "A dense, fragrant loaf cake soaked in dark rum syrup. The kind of thing you make in autumn and eat in thick slices with a cup of tea.",
+    "difficulty": "medium",
+    "why_it_works": "Rum and clove share eugenol — the same warm spice compound. Soaking the cake in rum after baking actually pushes more eugenol into the crumb.",
+    "ingredients": ["rum", "clove", "vanilla"]
+  },
+  {
+    "id": "yuzu-butter-curd",
+    "title": "Yuzu Butter Curd",
+    "description": "Like lemon curd but rounder and more complex. Yuzu's nootkatone gives it a grapefruit-like bitterness that cuts the richness of the butter.",
+    "difficulty": "medium",
+    "why_it_works": "Yuzu's citrus terpenes (limonene, linalool) and butter's lactones are natural complements — citrus and cream have been pairing forever, but yuzu makes it interesting.",
+    "ingredients": ["yuzu", "butter"]
+  },
+  {
+    "id": "anchovy-butter-linguine",
+    "title": "Anchovy Butter Linguine",
+    "description": "A Roman classic. Anchovies dissolved in butter with garlic and chilli over pasta. Nobody believes it's this good until they try it.",
+    "difficulty": "easy",
+    "why_it_works": "Anchovy is pure glutamates. Butter's fat carries and disperses them across every strand of pasta. It's not really anchovy-flavored pasta — it's just really savory pasta.",
+    "ingredients": ["anchovy", "butter"]
+  },
+  {
+    "id": "strawberry-basil-sorbet",
+    "title": "Strawberry Basil Sorbet",
+    "description": "Blended fresh strawberries with torn basil and a lemon hit. Better than plain strawberry sorbet and simpler to explain than it should be.",
+    "difficulty": "easy",
+    "why_it_works": "Strawberry and basil both contain linalool and a touch of eugenol. The herbal note in basil lifts the strawberry and makes it taste more like strawberry, not less.",
+    "ingredients": ["strawberry", "lemon"]
+  },
+  {
+    "id": "beetroot-miso-soup",
+    "title": "Roasted Beetroot Miso Soup",
+    "description": "Roasted beetroot blended with miso dashi. Earthy, savory, slightly sweet. Deep red in the bowl. Looks dramatic, tastes inevitable.",
+    "difficulty": "medium",
+    "why_it_works": "Both beetroot and miso have significant glutamate content. Roasting the beetroot reduces its geosmin (earthy) compound and develops natural sweetness, which miso's umami anchors.",
+    "ingredients": ["beetroot", "miso"]
+  },
+  {
+    "id": "banana-clove-loaf",
+    "title": "Banana and Clove Bread",
+    "description": "Overripe bananas with ground clove and a tiny bit of cardamom. More interesting than banana bread with cinnamon — try it once and you'll never go back.",
+    "difficulty": "easy",
+    "why_it_works": "Banana and clove both contain eugenol — the same compound that defines cloves is also present in natural bananas. The clove brings out what's already there.",
+    "ingredients": ["banana", "clove", "cardamom"]
+  },
+  {
+    "id": "lavender-honey-ice-cream",
+    "title": "Lavender Honey Ice Cream",
+    "description": "Heavy cream base infused with dried lavender, sweetened with good honey. Restrained — you want to taste lavender as a flavor, not a scent.",
+    "difficulty": "medium",
+    "why_it_works": "Lavender (linalool) and honey (furaneol, linalool, geraniol) are already sharing compounds before they ever meet in the bowl. The cream amplifies both.",
+    "ingredients": ["lavender", "honey", "cream"]
+  },
+  {
+    "id": "pineapple-rum-tart",
+    "title": "Roasted Pineapple Rum Tart",
+    "description": "Caramelized pineapple in a buttery tart shell, flambéed with dark rum. A dessert that feels more confident than it has any right to be.",
+    "difficulty": "medium",
+    "why_it_works": "Pineapple and rum share ethyl butanoate — the tropical ester that makes both smell the way they do. Flambéing the rum drives off alcohol and concentrates the esters.",
+    "ingredients": ["pineapple", "rum", "butter"]
+  },
+  {
+    "id": "mushroom-soy-ramen",
+    "title": "Shiitake Soy Ramen Broth",
+    "description": "A vegetarian ramen broth built on dried shiitake and soy sauce. The glutamate content rivals a long-cooked meat stock.",
+    "difficulty": "medium",
+    "why_it_works": "Shiitake and soy sauce are both glutamate-dense umami sources, but they deliver it differently — mushroom through lentionine, soy through fermentation. Together the broth tastes impossibly deep.",
+    "ingredients": ["mushroom", "soy-sauce"]
+  }
+]
