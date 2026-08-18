@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-export default function PairingCard({ pairing, sourceId }) {
+export default function PairingCard({ pairing }) {
   const navigate = useNavigate();
   const { id, name, emoji, sharedCompounds, overlap } = pairing;
 
@@ -11,22 +11,27 @@ export default function PairingCard({ pairing, sourceId }) {
       role="button"
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && navigate(`/ingredient/${id}`)}
-      aria-label={`Explore ${name} pairing`}
     >
-      <div className="pairing-card__emoji">{emoji || '●'}</div>
-      <div className="pairing-card__body">
-        <div className="pairing-card__name">{name}</div>
+      <div className="pairing-card__left">
+        <div className="pairing-card__name">
+          {emoji && <span style={{ marginRight: 6 }}>{emoji}</span>}
+          {name}
+        </div>
         <div className="pairing-card__compounds">
-          {sharedCompounds.slice(0, 3).map((c) => (
-            <span key={c} className="pairing-card__compound-tag">{c}</span>
+          {sharedCompounds.slice(0, 4).map((c) => (
+            <span key={c} className="pairing-card__tag">
+              {c}
+            </span>
           ))}
-          {sharedCompounds.length > 3 && (
-            <span className="pairing-card__compound-tag">+{sharedCompounds.length - 3}</span>
+          {sharedCompounds.length > 4 && (
+            <span className="pairing-card__tag" style={{ opacity: 0.7 }}>
+              +{sharedCompounds.length - 4} more
+            </span>
           )}
         </div>
       </div>
-      <div className="pairing-card__score" title={`${overlap} shared compound${overlap !== 1 ? 's' : ''}`}>
-        {overlap}
+      <div className="pairing-card__score" title={`${overlap} shared compounds`}>
+        {overlap} {overlap === 1 ? 'match' : 'matches'}
       </div>
     </div>
   );

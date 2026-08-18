@@ -7,11 +7,11 @@ export default function Layout() {
         <div className="container navbar__inner">
           <NavLink to="/" className="navbar__logo" aria-label="TasteGraph home">
             TasteGraph
-            <span>flavor science</span>
+            <span className="navbar__logo-tag">openCypher</span>
           </NavLink>
           <ul className="navbar__links">
-            <li><NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Explore</NavLink></li>
-            <li><NavLink to="/bridge" className={({ isActive }) => isActive ? 'active' : ''}>Bridge</NavLink></li>
+            <li><NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Explorer</NavLink></li>
+            <li><NavLink to="/bridge" className={({ isActive }) => isActive ? 'active' : ''}>Shortest Path</NavLink></li>
           </ul>
         </div>
       </nav>
@@ -20,13 +20,12 @@ export default function Layout() {
       </main>
       <footer style={{
         borderTop: '1px solid var(--border)',
-        padding: '24px',
+        padding: '20px',
         textAlign: 'center',
-        fontSize: 12,
+        fontSize: '12px',
         color: 'var(--text-dim)'
       }}>
-        TasteGraph — flavor pairing science meets graph databases.
-        Data based on real flavor compound research.
+        TasteGraph · Backed by CognoDB Graph DB & Neo4j Driver · Take-home submission
       </footer>
     </>
   );

@@ -1,7 +1,6 @@
 /* =========================================================
-   TasteGraph — Global Styles
-   Design: Dark food-magazine aesthetic
-   Palette: warm browns, amber accent, cream text
+   TasteGraph — Human Developer Design System
+   Clean, functional, modern dark theme. No artificial glowing blurs.
    ========================================================= */
 
 *, *::before, *::after {
@@ -11,41 +10,46 @@
 }
 
 :root {
-  --bg:           #1c1410;
-  --surface:      #2d2218;
-  --card:         #382a1c;
-  --border:       #4a3828;
-  --accent:       #d4a843;
-  --accent-dark:  #a87d28;
-  --accent-hot:   #c8622a;
-  --text:         #f0e6d3;
-  --text-muted:   #8a7a65;
-  --text-dim:     #5a4e3a;
-  --green:        #4a8c4a;
-  --radius:       10px;
-  --radius-lg:    16px;
-  --shadow:       0 4px 24px rgba(0, 0, 0, 0.4);
-  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.3);
-  --transition:   0.2s ease;
-}
-
-html {
-  scroll-behavior: smooth;
+  --bg:           #121316;
+  --surface:      #1a1c23;
+  --card:         #21242d;
+  --card-hover:   #282b36;
+  --border:       #2e323e;
+  --border-light: #3b4050;
+  
+  --accent:       #e2a76f;   /* warm toasted wheat/amber */
+  --accent-muted: #ad7c50;
+  --accent-hot:   #e06c53;   /* terracotta/burnt orange */
+  --green:        #48a9a6;   /* muted teal/green */
+  
+  --text:         #eceeed;
+  --text-muted:   #9ca3af;
+  --text-dim:     #6b7280;
+  
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono:    'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  
+  --radius-sm:    4px;
+  --radius:       8px;
+  --radius-lg:    12px;
+  
+  --transition:   0.15s ease-in-out;
 }
 
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 15px;
+  font-family: var(--font-sans);
+  font-size: 14px;
   line-height: 1.6;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Playfair Display', Georgia, serif;
-  line-height: 1.2;
   color: var(--text);
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 a {
@@ -55,127 +59,119 @@ a {
 }
 
 a:hover {
-  color: var(--accent-dark);
+  color: var(--text);
 }
 
 button {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: var(--font-sans);
   cursor: pointer;
   border: none;
-  transition: all var(--transition);
+  outline: none;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+code, pre, .mono {
+  font-family: var(--font-mono);
 }
 
-/* Scrollbar styling — small touch that makes it feel polished */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--surface);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-dark);
-}
-
-/* Layout utilities */
+/* Container */
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
 }
 
 .page {
-  min-height: calc(100vh - 72px);
-  padding: 48px 0 80px;
+  padding: 32px 0 64px;
 }
 
-/* Grid for ingredient/pairing cards */
+/* Grid Layouts */
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 16px;
 }
 
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
 }
 
-/* Tag/badge */
+/* Badges */
 .badge {
-  display: inline-block;
-  padding: 3px 10px;
-  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
   font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .badge-accent {
-  background: rgba(212, 168, 67, 0.15);
+  background: rgba(226, 167, 111, 0.12);
   color: var(--accent);
-  border: 1px solid rgba(212, 168, 67, 0.3);
-}
-
-.badge-hot {
-  background: rgba(200, 98, 42, 0.15);
-  color: var(--accent-hot);
-  border: 1px solid rgba(200, 98, 42, 0.3);
+  border: 1px solid rgba(226, 167, 111, 0.25);
 }
 
 .badge-green {
-  background: rgba(74, 140, 74, 0.15);
+  background: rgba(72, 169, 166, 0.12);
   color: var(--green);
-  border: 1px solid rgba(74, 140, 74, 0.3);
+  border: 1px solid rgba(72, 169, 166, 0.25);
 }
 
-/* Divider */
+.badge-hot {
+  background: rgba(224, 108, 83, 0.12);
+  color: var(--accent-hot);
+  border: 1px solid rgba(224, 108, 83, 0.25);
+}
+
+.badge-outline {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+/* Dividers */
 .divider {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 32px 0;
+  margin: 28px 0;
 }
 
-/* Section header */
+/* Section Header */
 .section-header {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .section-header h2 {
-  font-size: 1.6rem;
-  margin-bottom: 6px;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
 }
 
 .section-header p {
   color: var(--text-muted);
-  font-size: 14px;
+  font-size: 13px;
 }
 
-/* Shared fade-in animation */
+/* Simple fade in */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
+  from { opacity: 0; transform: translateY(4px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 .fade-in {
-  animation: fadeIn 0.35s ease forwards;
+  animation: fadeIn 0.2s ease forwards;
 }
 
-/* Shared pulse animation for loading skeletons */
-@keyframes pulse {
-  0%, 100% { opacity: 0.4; }
-  50%       { opacity: 0.7; }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
 }

@@ -214,10 +214,11 @@ s:\Dev\wexaAssessment\
 | 7 | 2026-08-18 | Build frontend (React + Vite + all pages) | ✅ Done |
 | 8 | 2026-08-18 | Run seed script against CognoDB | ✅ Done — 30 ingredients, 15 compounds, 82 CONTAINS, 159 PAIRS_WITH, 15 recipes |
 | 9 | 2026-08-18 | Write README.md | ✅ Done |
-| 10 | 2026-08-18 | Test locally (both servers) | ⏳ In progress |
-| 11 | 2026-08-18 | Deploy backend to Render | ⏳ |
-| 12 | 2026-08-18 | Deploy frontend to Vercel | ⏳ |
-| 13 | 2026-08-18 | Push to GitHub | ⏳ |
+| 10 | 2026-08-18 | Test locally (both servers) | ✅ Done — Verified Home, Ingredient Detail, Bridge, and Surprise me in browser |
+| 11 | 2026-08-18 | Initialize git & push to GitHub | ✅ Done — Pushed to https://github.com/surya-thedeveloper/tastegraph.git |
+| 12 | 2026-08-18 | Deploy backend to Render | ⏳ Ready for user deployment |
+| 13 | 2026-08-18 | Deploy frontend to Vercel | ⏳ Ready for user deployment |
+| 14 | 2026-08-18 | Record demo & submit email | ⏳ |
 
 ---
 

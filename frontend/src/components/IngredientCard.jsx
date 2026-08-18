@@ -11,13 +11,17 @@ export default function IngredientCard({ ingredient }) {
       role="button"
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && navigate(`/ingredient/${id}`)}
-      aria-label={`View ${name} flavor profile`}
     >
-      <div className="ingredient-card__emoji">{emoji || '●'}</div>
-      <div className="ingredient-card__name">{name}</div>
-      <div className="ingredient-card__desc">{description}</div>
-      <div className="ingredient-card__meta">
+      <div className="ingredient-card__header">
+        <div className="ingredient-card__name">
+          {emoji && <span style={{ marginRight: 6 }}>{emoji}</span>}
+          {name}
+        </div>
         {category && <span className="badge badge-accent">{category}</span>}
+      </div>
+      <div className="ingredient-card__desc">{description}</div>
+      <div className="ingredient-card__footer">
+        <span style={{ fontSize: 11, color: 'var(--text-dim)' }}>View compounds & graph →</span>
       </div>
     </div>
   );

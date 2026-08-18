@@ -48,7 +48,7 @@ export default function Home() {
       const data = await api.pairings.surprise();
       setSurprise(data);
     } catch (err) {
-      // not fatal — just show nothing
+      // quiet fallback
     } finally {
       setSurpriseLoading(false);
     }
@@ -59,25 +59,23 @@ export default function Home() {
     : ingredients.filter(i => i.category === category);
 
   return (
-    <div>
-      {/* Hero */}
-      <div className="home-hero container">
-        <p className="home-hero__eyebrow">Flavor Science × Graph Database</p>
-        <h1 className="home-hero__title">
-          Why do some flavors<br />just <em>work</em>?
-        </h1>
-        <p className="home-hero__subtitle">
-          TasteGraph maps the molecular connections between ingredients.
-          Pick anything from chocolate to truffle and see what it pairs with — and why.
-        </p>
-        <div className="home-hero__search">
-          <SearchBar
-            onSearch={handleSearch}
-            placeholder="Try 'coffee', 'truffle', or 'cardamom'..."
-          />
+    <div className="container page">
+      {/* Header */}
+      <div className="home-hero">
+        <div className="home-hero__header">
+          <h1 className="home-hero__title">TasteGraph</h1>
+          <p className="home-hero__subtitle">
+            A graph application mapping molecular flavor connections. Select an ingredient to see 
+            shared aromatic compounds, multi-hop pairings, and graph traversals.
+          </p>
         </div>
 
-        {/* Category pills */}
+        <SearchBar
+          onSearch={handleSearch}
+          placeholder="Filter by ingredient name (e.g. coffee, miso, cardamom)..."
+        />
+
+        {/* Category Pills */}
         <div className="home-categories">
           {CATEGORIES.map(cat => (
             <button
@@ -91,89 +89,70 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Surprise pairing */}
-      <div className="container home-surprise">
-        {surprise ? (
-          <div className="surprise-banner fade-in">
-            <h3>Unexpected Pairing ✦</h3>
-            <div className="surprise-banner__pair">
-              <span
-                style={{ cursor: 'pointer' }}
-                onClick={() => navigate(`/ingredient/${surprise.a.id}`)}
-              >
+      {/* Surprise Pairing Generator */}
+      {surprise ? (
+        <div className="surprise-box fade-in">
+          <div className="surprise-box__info">
+            <span className="badge badge-hot">Cross-Category Match</span>
+            <div className="surprise-box__pair">
+              <span style={{ cursor: 'pointer' }} onClick={() => navigate(`/ingredient/${surprise.a.id}`)}>
                 {surprise.a.emoji} {surprise.a.name}
               </span>
-              <span className="surprise-banner__plus">+</span>
-              <span
-                style={{ cursor: 'pointer' }}
-                onClick={() => navigate(`/ingredient/${surprise.b.id}`)}
-              >
+              <span style={{ margin: '0 8px', color: 'var(--text-dim)' }}>+</span>
+              <span style={{ cursor: 'pointer' }} onClick={() => navigate(`/ingredient/${surprise.b.id}`)}>
                 {surprise.b.emoji} {surprise.b.name}
               </span>
             </div>
-            <p className="surprise-banner__compounds">
-              Connected by: <strong style={{ color: 'var(--accent)' }}>{surprise.sharedCompounds.join(', ')}</strong>
-            </p>
-            <button className="btn btn-secondary" onClick={handleSurprise}>
-              Another one →
-            </button>
+            <span className="surprise-box__compounds">
+              [{surprise.sharedCompounds.join(', ')}]
+            </span>
           </div>
-        ) : (
-          <div style={{ textAlign: 'center' }}>
-            <button
-              id="surprise-me-btn"
-              className="btn btn-secondary"
-              onClick={handleSurprise}
-              disabled={surpriseLoading}
-              style={{ fontSize: '14px' }}
-            >
-              {surpriseLoading ? 'Finding a pairing...' : '✦ Surprise me'}
-            </button>
-            <p style={{ marginTop: 8, fontSize: 12, color: 'var(--text-dim)' }}>
-              Find an unexpected cross-category flavor match
-            </p>
-          </div>
-        )}
-      </div>
-
-      <hr className="divider" style={{ marginTop: 0 }} />
-
-      {/* Ingredients grid */}
-      <div className="container page" style={{ paddingTop: 0 }}>
-        <div className="section-header">
-          <h2>
-            {query
-              ? `Results for "${query}"`
-              : category !== 'All'
-              ? `${category} ingredients`
-              : 'All ingredients'}
-          </h2>
-          {!loading && (
-            <p>
-              {filtered.length} ingredient{filtered.length !== 1 ? 's' : ''}
-              {!query && ' — click any to explore its flavor profile'}
-            </p>
-          )}
+          <button className="btn btn-secondary" onClick={handleSurprise}>
+            Randomize →
+          </button>
         </div>
+      ) : (
+        <div style={{ marginBottom: 24 }}>
+          <button
+            className="btn btn-secondary"
+            onClick={handleSurprise}
+            disabled={surpriseLoading}
+          >
+            {surpriseLoading ? 'Querying Cypher...' : '🎲 Random Cross-Category Match'}
+          </button>
+        </div>
+      )}
 
-        {error ? (
-          <ErrorBanner message={error} onRetry={() => load(query)} />
-        ) : loading ? (
-          <LoadingSpinner message="Checking the flavor network..." />
-        ) : filtered.length === 0 ? (
-          <div className="empty-state">
-            <div className="empty-state__icon">◌</div>
-            <h3>Nothing found</h3>
-            <p>Try a different search term — or clear the filter and browse everything.</p>
-          </div>
-        ) : (
-          <div className="grid-3">
-            {filtered.map(ing => (
-              <IngredientCard key={ing.id} ingredient={ing} />
-            ))}
-          </div>
+      {/* Results grid */}
+      <div className="section-header">
+        <h2>
+          {query
+            ? `Search: "${query}"`
+            : category !== 'All'
+            ? `${category} Category`
+            : 'All Ingredients'}
+        </h2>
+        {!loading && (
+          <p>{filtered.length} nodes loaded from CognoDB</p>
         )}
       </div>
+
+      {error ? (
+        <ErrorBanner message={error} onRetry={() => load(query)} />
+      ) : loading ? (
+        <LoadingSpinner message="Querying CognoDB..." />
+      ) : filtered.length === 0 ? (
+        <div className="empty-state">
+          <h3>No matching ingredients found</h3>
+          <p>Try searching for another keyword or select 'All'.</p>
+        </div>
+      ) : (
+        <div className="grid-3">
+          {filtered.map(ing => (
+            <IngredientCard key={ing.id} ingredient={ing} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

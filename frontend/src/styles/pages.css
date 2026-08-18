@@ -1,61 +1,42 @@
 /* =========================================================
-   TasteGraph — Page Styles
+   TasteGraph — Page Styles (Human Developer Aesthetic)
    ========================================================= */
 
-/* ---- Home Page ---- */
+/* Hero */
 .home-hero {
-  padding: 72px 0 56px;
-  text-align: center;
+  padding: 40px 0 32px;
 }
 
-.home-hero__eyebrow {
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--accent);
-  margin-bottom: 16px;
+.home-hero__header {
+  margin-bottom: 24px;
 }
 
 .home-hero__title {
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  font-weight: 700;
-  margin-bottom: 16px;
-  line-height: 1.1;
-}
-
-.home-hero__title em {
-  color: var(--accent);
-  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .home-hero__subtitle {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text-muted);
-  max-width: 520px;
-  margin: 0 auto 40px;
-  line-height: 1.65;
-}
-
-.home-hero__search {
-  display: flex;
-  justify-content: center;
+  max-width: 600px;
+  line-height: 1.5;
 }
 
 .home-categories {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin-top: 20px;
+  gap: 6px;
+  margin-top: 16px;
 }
 
 .category-pill {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 6px 16px;
-  font-size: 13px;
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 12px;
   color: var(--text-muted);
   cursor: pointer;
   transition: all var(--transition);
@@ -63,97 +44,92 @@
 
 .category-pill:hover,
 .category-pill.active {
-  background: rgba(212, 168, 67, 0.1);
+  background: rgba(226, 167, 111, 0.1);
   border-color: var(--accent);
   color: var(--accent);
 }
 
-.home-surprise {
-  margin: 48px 0 24px;
+/* Surprise Banner */
+.surprise-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
-/* ---- Ingredient Page ---- */
+.surprise-box__info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.surprise-box__pair {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.surprise-box__compounds {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+/* Ingredient Page */
 .ingredient-page__header {
-  padding: 40px 0 32px;
+  padding: 24px 0;
   border-bottom: 1px solid var(--border);
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .ingredient-page__top {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
-  margin-bottom: 20px;
+  gap: 16px;
 }
 
-.ingredient-page__emoji {
-  font-size: 3.5rem;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.ingredient-page__meta {
-  flex: 1;
-}
-
-.ingredient-page__meta h1 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  margin-bottom: 8px;
+.ingredient-page__title {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
 }
 
 .ingredient-page__desc {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--text-muted);
-  max-width: 640px;
-  line-height: 1.65;
+  max-width: 600px;
 }
 
-.ingredient-page__origin {
-  font-size: 13px;
-  color: var(--text-dim);
-  margin-top: 8px;
-}
-
-/* Compounds list */
+/* Compounds Table / List */
 .compounds-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .compound-row {
   display: flex;
   align-items: center;
-  gap: 14px;
+  justify-content: space-between;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 12px 16px;
-}
-
-.compound-row__amount {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-size: 13px;
 }
 
 .compound-row__name {
-  font-weight: 500;
-  font-size: 14px;
-  flex: 1;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
 }
 
 .compound-row__aroma {
-  font-size: 12px;
   color: var(--text-muted);
-  font-style: italic;
-}
-
-.compound-row__class {
-  font-size: 11px;
-  color: var(--text-dim);
-  text-align: right;
+  font-size: 12px;
 }
 
 /* Tabs */
@@ -161,19 +137,18 @@
   display: flex;
   gap: 4px;
   border-bottom: 1px solid var(--border);
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .tab {
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 8px 14px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--text-muted);
   background: transparent;
   border: none;
   border-bottom: 2px solid transparent;
   cursor: pointer;
-  transition: all var(--transition);
   margin-bottom: -1px;
 }
 
@@ -186,98 +161,68 @@
   border-bottom-color: var(--accent);
 }
 
-/* ---- Bridge Page ---- */
-.bridge-page__header {
-  padding: 40px 0 32px;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 40px;
-}
-
-.bridge-page__header h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.bridge-page__header p {
-  color: var(--text-muted);
-  max-width: 520px;
-}
-
+/* Bridge Page */
 .bridge-form {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 28px;
+  border-radius: var(--radius);
+  padding: 20px;
   display: flex;
-  gap: 16px;
+  gap: 12px;
   align-items: flex-end;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .bridge-form__field {
   flex: 1;
-  min-width: 200px;
 }
 
 .bridge-form__label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--text-muted);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   display: block;
 }
 
 .bridge-form select {
   width: 100%;
-  padding: 12px 16px;
+  padding: 8px 12px;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   color: var(--text);
-  font-size: 14px;
-  font-family: inherit;
-  outline: none;
-  cursor: pointer;
-  transition: border-color var(--transition);
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a7a65' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
-  padding-right: 36px;
-}
-
-.bridge-form select:focus {
-  border-color: var(--accent);
-}
-
-.bridge-form select option {
-  background: var(--card);
-}
-
-.bridge-connector {
-  color: var(--text-dim);
-  font-size: 1.5rem;
-  padding-bottom: 10px;
-  flex-shrink: 0;
-}
-
-.bridge-result__hops {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.bridge-result__hops strong {
-  font-size: 2rem;
-  color: var(--accent);
-  font-family: 'Playfair Display', serif;
-}
-
-.bridge-result__hops span {
   font-size: 13px;
-  color: var(--text-muted);
-  display: block;
-  margin-top: 4px;
+  outline: none;
+}
+
+.bridge-path {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  flex-wrap: wrap;
+}
+
+.bridge-path__node {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.bridge-path__node--highlight {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.bridge-path__arrow {
+  color: var(--text-dim);
 }
