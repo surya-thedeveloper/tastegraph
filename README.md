@@ -2,8 +2,6 @@
 
 A flavor pairing explorer — built on real food science and a graph database.
 
-**[Live demo →](https://tastegraph.vercel.app)** | [Screen recording](#)
-
 ---
 
 ## What is this?
